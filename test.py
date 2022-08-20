@@ -5,18 +5,6 @@ with open("Alice.txt",'r') as data_file:
         #print(data)
     frequent_word = ""
     frequency = 0
-
-
-    for line in data_file:
-        
-        # splits each line into
-        # words and removing spaces
-        # and punctuations from the input
-        line_word = line.lower().replace(',','').replace('.','').split(" ");
-        
-        # Adding them to list words
-        for w in line_word:
-            data.append(w);
             
     # Finding the max occurred word
     for i in range(0, len(data)):
