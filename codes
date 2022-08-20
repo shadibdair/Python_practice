@@ -1,0 +1,3 @@
+# Get the longest word on txt file
+- alice_words = alice_txt.split()
+- alice_words[[len(w) for w in alice_words].index(max([len(w) for w in alice_words]))]
