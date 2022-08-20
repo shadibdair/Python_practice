@@ -1,4 +1,6 @@
-#Opens a file in read mode  
+
+# For testing 
+
 with open("Alice.txt",'r') as data_file:
     for line in data_file:
         data = line.split()
