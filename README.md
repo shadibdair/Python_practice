@@ -1,7 +1,6 @@
 # Python_practice
-Practice PY
+Practice PY :
 
-
-pip3
-python3-venv
-python3
+- pip3
+- python3-venv
+- python3
