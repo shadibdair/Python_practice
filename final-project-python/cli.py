@@ -1,3 +1,8 @@
+# Imports
+import random
+import string
+#--------
+
 def enc_init():
     commands = {'info': enc_info, 'load':enc_load, 'newkey':enc_newkey, 'save':enc_save}
     return commands
@@ -23,8 +28,9 @@ def enc_load(self):
     print('_____load')
 
 def enc_newkey(self):
-    #the_new_key = enckey.new_enc_key()
-    print('_____newkey')
+    letters = list(string.ascii_lowercase)
+    random.shuffle(letters)
+    print('_____newkey: /t', letters)
 
 def enc_info(self):
     print('____info')
