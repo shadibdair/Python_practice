@@ -3,10 +3,11 @@ import string
 
 # Create a new key
 def generate():
-    letters=string.ascii_lowercase
-    print(letters)
+    letters=list(string.ascii_lowercase)
     random.shuffle(letters)
     print(letters)
 
+
 generate()
+
 
