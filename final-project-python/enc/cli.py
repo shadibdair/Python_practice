@@ -37,13 +37,12 @@ def enc_newkey(self):
     encryption = list(string.ascii_lowercase)
     print("enc: ", encryption)
     random.shuffle(encryption)
-    decryption = encryption
+    #decryption = encryption
+    decryption = ''.join(encryption)
     print("dec: ", decryption)
-    #print('_____newkey  ->  ', letters_new)
-
-    #key = {letters[i]:letters_new[i+1] for i in range(len(letters), 2)}
-    #print(key)
-
+    print("\n \n")
+    key = {encryption[i]:decryption[i] for i in range(len(encryption))}
+    print(key)
     print("A new key called {} was created")
 
 def enc_info(self):
