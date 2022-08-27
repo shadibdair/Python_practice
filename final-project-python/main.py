@@ -7,7 +7,6 @@ def generate():
     random.shuffle(letters)
     print(letters)
 
-
 generate()
 
 

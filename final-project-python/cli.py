@@ -3,8 +3,14 @@ import random
 import string
 #--------
 
+# CLI program
 def enc_init():
-    commands = {'info': enc_info, 'load':enc_load, 'newkey':enc_newkey, 'save':enc_save}
+    commands = {
+        'info': enc_info, 
+        'load':enc_load, 
+        'newkey':enc_newkey, 
+        'save':enc_save
+        }
     return commands
 
 
@@ -19,7 +25,7 @@ def main_cli():
             cli_end = True
         if cmd:
             commands[cmd[0]](cmd[1:])
-
+# ------------
 
 def enc_save(self):
     print('_____save')
@@ -28,9 +34,17 @@ def enc_load(self):
     print('_____load')
 
 def enc_newkey(self):
-    letters = list(string.ascii_lowercase)
-    random.shuffle(letters)
-    print('_____newkey: /t', letters)
+    encryption = list(string.ascii_lowercase)
+    print("enc: ", encryption)
+    random.shuffle(encryption)
+    decryption = encryption
+    print("dec: ", decryption)
+    #print('_____newkey  ->  ', letters_new)
+
+    #key = {letters[i]:letters_new[i+1] for i in range(len(letters), 2)}
+    #print(key)
+
+    print("A new key called {} was created")
 
 def enc_info(self):
     print('____info')
