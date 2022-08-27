@@ -1,6 +1,10 @@
 # Imports
 import random
 import string
+import enckey
+import encload
+import encsave
+import encinfo
 #--------
 
 # CLI program
@@ -30,24 +34,19 @@ def main_cli():
 # ------------
 
 def enc_save(self):
-    print('_____save')
+    save_key = encsave.save_key()
+    print(save_key)
 
 def enc_load(self):
-    print('_____load')
+    load_key = encload.load_key()
+    print(load_key)
 
 def enc_key(self):
-    encryption = list(string.ascii_lowercase)
-    print("enc: ", encryption)
-    random.shuffle(encryption)
-    #decryption = encryption
-    decryption = ''.join(encryption)
-    print("dec: ", decryption)
-    print("\n \n")
-    key = {encryption[i]:decryption[i] for i in range(len(encryption))}
-    print(key)
-    print("A new key called {} was created")
+    the_new_key = enckey.new_enc_key()
+    print(the_new_key)
 
 def enc_info(self):
-    print('____info')
+    info_key = encinfo.info_key()
+    print(info_key)
 
 main_cli()
