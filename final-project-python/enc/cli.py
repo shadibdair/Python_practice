@@ -23,8 +23,8 @@ def main_cli():
         cmd = cmd_str.split()
         if cmd and cmd[0] == 'done':
             cli_end = True
-        if cmd:
-            commands[cmd[0]](cmd[1:])
+        # if cmd:
+        #     commands[cmd[0]](cmd[1:])
 # ------------
 
 def enc_save(self):
