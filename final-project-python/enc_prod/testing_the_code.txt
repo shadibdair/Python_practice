@@ -1,0 +1,20 @@
+subs>newkey key
+A new key called key was created
+subs>save file
+Enc/Dec keys saved in file file
+subs>load file
+Key key from file file loaded
+subs>enc text1.txt enc.txt
+File text1.txt was encrypted into enc.txt
+subs>dec enc.txt clear.txt
+File enc.txt was decrypted into clear.txt
+subs>info
+Current key: key
+state: saved in file
+Encryption:
+         abcdefghijklmnopqrstuvwxyz
+         iefajdmqxkgprbtowlcynushzv
+Decryption:
+         iefajdmqxkgprbtowlcynushzv
+         abcdefghijklmnopqrstuvwxyz
+subs>done  

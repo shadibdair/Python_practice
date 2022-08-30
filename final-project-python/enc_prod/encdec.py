@@ -1,15 +1,16 @@
 # Function that decrypt the text dec
-def encryption_decryption(dec_file, enc, dec):
-    enc = ''
-    with open(dec_file, "r") as file:
-        str = file.read()
-        list = list(str)
-        for letter in list:
-            if letter in dec_file:
-                enc += dec_file[letter]
+def encjsonconvert(dic, f_json, t_json):
+    str_enc = ''
+    with open(f_json, "r") as fm:
+        str = fm.read()
+        list_str = list(str)
+        for letter in list_str:
+            if letter in dic:
+                str_enc += dic[letter]
             else:
-                enc += letter
-    with open(dec, "w") as dec_file:
-        dec_file.write(enc)
+                str_enc += letter
+    with open(t_json, "w") as ft:
+        ft.write(str_enc)
     return 0
+
 
